@@ -1,0 +1,41 @@
+{
+  "name": "finstack-copilot",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Approve what your AI agent proposes, before any money moves. Built on FinStack.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "api:types": "openapi-typescript ./finstack-openapi.json -o src/lib/finstack/schema.d.ts"
+  },
+  "dependencies": {
+    "ag-grid-community": "^34.3.1",
+    "ag-grid-react": "^34.3.1",
+    "jose": "^6.2.12",
+    "next": "16.3.8",
+    "openapi-fetch": "^0.17.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24.19.1",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.8",
+    "openapi-typescript": "^7.13.0",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^5.0.3"
+  }
+}
