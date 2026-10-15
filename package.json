@@ -17,6 +17,7 @@
     "api:types": "openapi-typescript ./finstack-openapi.json -o src/lib/finstack/schema.d.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.134.0",
     "ag-grid-community": "^34.3.1",
     "ag-grid-react": "^34.3.1",
     "jose": "^6.2.12",
